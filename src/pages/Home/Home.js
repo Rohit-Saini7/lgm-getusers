@@ -9,7 +9,7 @@ function Home() {
   const [users, setUsers] = useState([]);
   const handleClick = () => {
     setIsLoading(true);
-    fetch("https://reqres.in/api/users?page=2")
+    fetch("https://reqres.in/api/users?page=1")
       .then((respose) => respose.json())
       .then((respose) => {
         setUsers(respose.data);
